@@ -1,9 +1,13 @@
-server:
-  port: 7080
 spring:
   zipkin:
     service:
       name: zipkin-server-demo
+  application:
+    name: sleuth-zipkin-server
   cloud:
     stream:
-      binders: 
+      kafka:
+        binder:
+          brokers: localhost
+server:
+  port: 9411
