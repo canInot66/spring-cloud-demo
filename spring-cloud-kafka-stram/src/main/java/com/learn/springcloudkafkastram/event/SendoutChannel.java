@@ -1,4 +1,4 @@
-package com.learn.account.event;
+package com.learn.springcloudkafkastram.event;
 
 import org.springframework.cloud.stream.annotation.Output;
 import org.springframework.messaging.MessageChannel;

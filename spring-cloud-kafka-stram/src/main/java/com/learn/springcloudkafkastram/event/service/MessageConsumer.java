@@ -1,6 +1,6 @@
-package com.learn.account.event.service;
+package com.learn.springcloudkafkastram.event.service;
 
-import com.learn.account.event.CustomChannels;
+import com.learn.springcloudkafkastram.event.CustomChannels;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.cloud.stream.annotation.EnableBinding;

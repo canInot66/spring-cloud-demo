@@ -1,6 +1,6 @@
-package com.learn.account.event.service;
+package com.learn.springcloudkafkastram.event.service;
 
-import com.learn.account.event.SendoutChannel;
+import com.learn.springcloudkafkastram.event.SendoutChannel;
 import jdk.Exported;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.stream.annotation.EnableBinding;
