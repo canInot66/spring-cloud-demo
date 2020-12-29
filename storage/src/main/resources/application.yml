@@ -1,0 +1,5 @@
+server:
+  port: 7070
+spring:
+  zipkin:
+    base-url: http://localhost:7080/
