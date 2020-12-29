@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: spring-cloud-stream-demo
+  cloud:
+    stream:
+      bindings:
+        input:
+          contentType=text/plain:
