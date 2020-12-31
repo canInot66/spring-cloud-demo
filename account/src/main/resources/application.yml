@@ -1,21 +1,35 @@
+server:
+  port: 5080
 spring:
-  cloud:
-    stream:
-      kafka:
-        binder:
-          brokers: localhost
-  zipkin:
-    sender:
-      type: kafka
-  sleuth:
-    sampler:
-      rate: 10
-      probability: 1.0
+  application:
+    name: account-service
+
+
+
+#  cloud:
+#    stream:
+#      kafka:
+#        binder:
+#          brokers: localhost
+#  zipkin:
+#    sender:
+#      type: kafka
+#  sleuth:
+#    sampler:
+#      rate: 10
+#      probability: 1.0
 #Setting logging levels
 logging:
   level:
     com.netflix: INFO
     org.springframework.web: INFO
     com.learn: DEBUG
-server:
-  port: 5080
+
+
+eureka:
+  client:
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    prefer-ip-address: true  #注册服务的ip，而不是服务的名称

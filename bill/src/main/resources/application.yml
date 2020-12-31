@@ -1,2 +1,13 @@
 server:
-  port: 7060
+  port: 7080
+spring:
+  application:
+    name: bill-service
+eureka:
+  client:
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    prefer-ip-address: true  #注册服务的ip，而不是服务的名称
+
