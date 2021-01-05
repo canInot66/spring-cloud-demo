@@ -22,7 +22,7 @@ public class AccountApplication {
     @Autowired
     private BillHttp billHttp;
 
-    // http://localhost:5080/account
+        //http://localhost:5080/account
     @RequestMapping("/account")
     public Object get() {
         logger.info("--------------");
